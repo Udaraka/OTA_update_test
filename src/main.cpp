@@ -224,6 +224,8 @@ void loop()
     ledState = ledState == LOW ? HIGH : LOW;
     digitalWrite( BUILTIN_LED, ledState );
   }
+
+  Serial.println("OTA worked");
   
   // Just chill
   server.handleClient();
